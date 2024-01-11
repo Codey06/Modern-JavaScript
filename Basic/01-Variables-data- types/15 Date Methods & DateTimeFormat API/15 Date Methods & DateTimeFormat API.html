@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Date Methods & DateTimeFormat API</title>
+</head>
+<body>
+    <h1>15 Date Methods & DateTimeFormat API</h1>
+</body>
+</html>
+<script>
+    let x;
+    let d=new Date()
+
+    x=d.getDate()
+    x=d.getTime()
+    x=d.getFullYear()
+    x=d.getMonth()
+    x=d.getDay()
+    x=d.getHours()
+    x=d.getMinutes()
+    x=d.getSeconds()
+    x=d.getMilliseconds()
+    x=d.getTimezoneOffset()
+    // x=d.getTimezoneAbbr()
+    x=`${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`
+
+    x= Intl.DateTimeFormat('en-US').format(d)
+    x= Intl.DateTimeFormat('en-GB').format(d)
+    x= Intl.DateTimeFormat('defult',{month:'long'}).format(d)
+    x= Intl.DateTimeFormat('defult',{day:'numeric'}).format(d)
+    x=d.toLocaleString('defult',{month:'short'})
+    x=d.toLocaleString('defult',{day:'numeric'})
+    x=d.toLocaleString('defult',{year:'numeric'})
+    x=d.toLocaleString('defult',{hour:'numeric'})
+    x=d.toLocaleString('defult',{hour12:true})
+    x=d.toLocaleString('defult',{minute:'numeric'})
+    x=d.toLocaleString('defult',{second:'numeric'})
+    x=d.toLocaleString('defult',{timeZoneName:'short'})
+    x=d.toLocaleString('defult',{timeZoneName:'long'})
+    x=d.toLocaleString('defult',{weekday:'long'})
+    x=d.toLocaleString('defult',{weekday:'short'})
+    x=d.toLocaleString('defult',{era:'long'})
+    x=d.toLocaleString('defult',{era:'short'})
+    x=d.toLocaleString('defult',{hourCycle:'h12'})
+    x=d.toLocaleDateString('defult',{
+        weekday:'long',
+        year:'numeric',
+        month:'long',
+        day:'numeric',
+        hour:'numeric',
+        minute:'numeric',
+        second:'numeric',
+        timeZoneName:'short',
+        hourCycle:'h12',
+        hour12:true,
+        timeZone:'Asia/Kolkata'
+
+    })
+
+    
+    console.log(x)
+</script>

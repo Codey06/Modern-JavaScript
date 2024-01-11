@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14 Dates and Times</title>
+</head>
+<body>
+    <h1>14 Dates and Times</h1>
+
+    <div id="date"></div>
+    
+</body>
+</html>
+<script>
+    // var today = new Date();
+    // var dd = today.getDate();
+    // var mm = today.getMonth() + 1; //January is 0!
+    // var yyyy = today.getFullYear();
+    // if (dd < 10) {
+    //     dd = '0' + dd;
+    // }
+    // if (mm < 10) {
+    //     mm = '0' + mm;
+    // }
+    // var today = dd + '/' + mm + '/' + yyyy;
+    // document.getElementById("date").innerHTML = today;
+
+    let d;
+    d= new Date()
+    d=d.toString()
+    // d=new Date(1994,9,27,15,56,42)
+    d=new Date('1994-10-27')
+
+    d=Date.now()
+
+    d=new Date('07-10-2022')
+   d=d.getTime()
+   d=d.valueOf()
+
+   d=new Date(1657436400000)
+
+
+   d= Math.floor(Date.now() /1000)
+    
+    console.log( d)
+    // document.getElementById("date").innerHTML = d;
+
+</script>

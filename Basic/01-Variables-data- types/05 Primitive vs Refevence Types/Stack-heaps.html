@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack and Heap</title>
+</head>
+<body>
+    <h1>Data types</h1>
+    <center><h1>Premitive types</h1></center>
+    Stored directly in the "stack", where it is accessed from
+    String| Number | Boolean| Null | Undefined | Symbol |  BigInt
+
+    <center><h1>Reference types</h1></center>
+    Stored in the "heap", where it is accessed from
+    Object | Array | Function | Date | RegExp | Map | Set | WeakMap | WeakSet
+
+    <center><h1>Stack and Heap</h1></center>
+    <h1>Stack</h1>
+    <ul>
+        <li>Array</li>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Null</li>
+        <li>Undefined</li>
+        <li>Symbol</li>
+        <li>BigInt</li>
+    </ul>
+    <h1>Heap</h1>
+    <ul>
+        <li>Object</li>
+        <li>Array</li>
+        <li>Function</li>
+        <li>Date</li>
+        <li>RegExp</li>
+        <li>Map</li>
+        <li>Set</li>
+        <li>WeakMap</li>
+        <li>WeakSet</li>
+    </ul>
+    
+    Reference Types : Stored In the heap and accessed by Reference
+
+
+    Primitive Types : Stored In the stack and accessed by Value
+
+
+    
+</body>
+</html>
+
+<script>
+    // function myFunction() {
+    //     alert("Hello World!");
+    // }
+    // myFunction();
+    // Primitive Types : Stored In the stack and accessed by Value
+   const ageq=25
+    let newAge=ageq;
+    newAge=40
+    console.log(newAge)
+    // Values are stored on the stack
+    const name='john'
+    const age= 30
+    console.log(name)
+    
+    // Reference Types : Stored In the heap and accessed by Reference
+    const person={
+        name: 'barad',
+        age: '40'
+    }
+    console.log(person.name)
+
+    let newName=name;
+    newName='johnton'
+    console.log(newName)
+
+    let newPerson=person;
+    newPerson.name='johnton'
+
+
+</script>

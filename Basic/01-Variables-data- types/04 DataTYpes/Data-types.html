@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes</title>
+</head>
+<body>
+    <h1>Primitive Data Types</h1>
+    <hr>
+    <h4>String:-</h4>Sequence of character. Must be i qoutes or backticks
+    <hr>
+    <h4>Number:-</h4> Integers as well as floating-point Number
+    <hr>
+    <h4>Boolean:-</h4>Locigal Entity / true or false
+    <hr>
+    <h4>Null:-</h4>Intentional absence of any  object value
+    <hr>
+    <h4>Underfined:-</h4>A Variable that has not yet been defined/assigned
+    <hr>
+    <h4>Symbol:-</h4>Built-in object whose constructor returns a unique symbol
+    <hr>
+    <h4>BigInt:-</h4>Numbers that are greater than  the "Number" tyoe can handle
+    <hr>
+    <br>
+    <h1>Reference Types (Objects)</h1>
+     <h6>Reference Types  "Objects"</h6>
+     are a non-primitive value and when assigned to a Variable, the variable is given
+      a reference to the value.
+     <br>
+     Object ;iterals, arrays and function are all reference types
+
+
+     <h1>  Static Typing vs Dynamic Types</h1>
+
+     JavaScript is a dynamically-typed Language :- this means, we do not explicitly
+     define the types for our variable, Many other languages are staticaly-typed
+     such as  C, C++, JavaScript
+     <br>
+     <br>
+     TypeScript is a superset od JavaScript, which allows staticaly-typing.
+     this can make your  code more verbose and less prone to erros. TypeScript
+     may be something you want to look into later on.
+    
+</body>
+</html>
+<script>
+// String
+const firstName='Sara';
+console.log(firstName, typeof firstName);
+
+// Number
+
+const age=25;
+console.log(age, typeof age);
+
+// Boolean
+
+const isMarried=true;
+console.log(isMarried, typeof isMarried);
+
+// Null
+const aptNumber=null
+console.log(aptNumber, typeof aptNumber);
+
+// Undefined
+let score=undefined
+console.log(score, typeof score);
+
+// Symbol
+
+const mySymbol=Symbol();
+console.log(mySymbol, typeof mySymbol);
+
+// BigInt
+
+const myBigInt=BigInt(100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+
+console.log(myBigInt, typeof myBigInt);
+
+// Reference Types
+
+const person=[1,2,3]
+
+console.log(person, typeof person);
+
+// Static Typing
+
+const person1={
+    name:'Sara',
+    age:25,
+    isMarried:true
+}
+
+console.log(person1, typeof person1);
+
+// Dynamic Typing
+
+const person2={
+    name:'Sara',
+    age:25,
+    isMarried:true
+}
+
+console.log(person2.name, typeof person2.name);
+
+
+
+
+
+</script>

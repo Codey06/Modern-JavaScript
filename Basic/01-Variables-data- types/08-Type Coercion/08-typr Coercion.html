@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08 Type coercion</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // var a = 10;
+    // var b = "10";
+    // var c = true;
+    // var d = "true";
+    // var e = false;
+    // var f = "false";
+    // var g = null;
+    // var h = "null";
+    // var i = undefined;
+    // var j = "undefined";
+    // console.log(a + b + c + d + e + f + g + h + i + j);
+
+    let x;
+    x = 10 + '10';
+    x=5 + Number('5')
+    x=5 *'5';
+    x=5 /'5';
+    x=5 %'5';
+    x=5 **'5';
+    x=5 <<'5';
+    x=5 >>'5';
+    x=5 +null
+    x=5 +undefined
+    x=5 +NaN
+    x=5 +Infinity
+    x=5 +-Infinity
+    
+    console.log(x, typeof x);
+</script>
