@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07-Destructuring & Naming</title>
+</head>
+<body>
+    <h1>07-Destructuring & Naming</h1>
+</body>
+</html>
+<script>
+    const firstName='john'
+    const lastName='doe'
+    const age=30
+
+    const person={
+        firstName,
+        lastName,
+        age
+    }
+    console.log(person.lastName);
+
+     // Destructuring
+     const arr={id:'mustaf'}
+     const {id:firs} = arr;
+     console.log(firs);
+
+
+    // Destructuring arrays
+
+    const number=[23,67,33,49,52];
+
+    const [firstname,last,...r]=number
+    console.log(firstname,last,r);
+
+</script>

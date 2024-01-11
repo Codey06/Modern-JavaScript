@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06-Object-Spred-%-Methods</title>
+</head>
+<body>
+    <h1>06-12-Object-Spred-%-Methods</h1>
+</body>
+</html>
+<script>
+    let x;
+    // var obj = {
+    //     name: "John",
+    //     age: 30,
+    //     city: "New York"
+    // };
+    // // obj.push(14)
+    // // obj.pop()
+    // // obj.unshift(19)
+    // // obj.shift(19)
+    // // obj.reverse()
+    // x=obj.includes(9)
+    // // x=obj.indexOf(98)
+    // // x=obj.lastIndexOf(98)
+    // // x=obj.slice(2,6)
+    // // x=obj.splice(8)
+    // x=obj.splice(1,4).reverse().toString().charAt(2)
+    // console.log(x,obj);
+    
+    // // console.log(obj.length);
+    // // console.log(obj[0]);
+    // // console.log(obj[10]);
+    // // console.log(obj.reverse());
+
+    const todo=new Object;
+    todo.name="John";
+    todo.age
+    todo.city="New York";
+   
+
+    const person={
+        addrss:{
+            // city:"New York",
+            // state:"NY"
+            coordes:{
+                lat: 42.9384,
+                lng:-71.3232
+            }
+        }
+    }
+
+    x=person.addrss.coordes.lat;
+    const obj1={a:1,b:2}
+    const obj2={c:3,d:4}
+    const obj13={...obj1,...obj2}
+    const object4= Object.assign({},obj1, obj2)
+    const todos=[
+        { id:1 , name:'mustafa'},
+        { id:2, name:'Ahmed'},
+        { id:3 , name:'Jirow'}
+    ]
+    // x=todos[0]
+    x=Object.keys(todo).length
+    x=Object.values(todo).length
+    x=Object.entries(todo)
+    x=todo.hasOwnProperty('age')
+
+    console.log(x);
+</script>

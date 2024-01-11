@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-18-Nesting,Concat & Spread</title>
+</head>
+<body>
+    <h1>03-18-Nesting,Concat & Spread</h1>
+</body>
+</html>
+<script>
+    let x;
+    const fruits=['apple','pear','ornge'];
+    const berries=['strawberry','blueberry','rasberry'];
+    // fruits.push(berries);
+
+    // x=fruits[3][1]
+    // const allfruits=[fruits,berries]
+    // x=allfruits[1][0]
+    x=fruits.concat(berries)
+
+    // Spread Operator(...)
+     x=[...fruits,...berries]
+
+     // Flatten Array
+     const arr=[1,2,[3,4],[5,6],6,7,[8,9],10,[11]]
+    //   x=arr.flat()
+    //   console.log(x);
+    //   console.log(arr);
+    //   console.log(arr.length);
+    //   console.log(arr[0]);
+    //   console.log(arr[10]);
+    //   console.log(arr.flat(2));
+    //   console.log(arr);
+    //   console.log(arr.length);
+    //   console.log(arr[0]);
+    //   console.log(arr[10]);
+    //   console.log(arr.flat(3));
+    //   console.log(arr);
+    //   console.log(arr.length);
+    //   console.log(arr[0]);
+    //   console.log(arr[10]);
+    //   console.log(arr.flat(4));
+    //   console.log(arr);
+    //   console.log(arr.length);
+    //   console.log(arr[0]);
+    //   console.log(arr[10]);
+    //   console.log(arr.flat(5));
+
+    // Static Methods on Array Object
+    // Array.from(fruits);
+    // Array.of(fruits);
+    // Array.isArray(fruits);
+    // Array.isArray(berries);
+    // Array.isArray(arr);
+    // Array.isArray(arr[0]);
+    // Array.isArray(arr[1]);
+    // Array.isArray(arr[2]);
+    // Array.isArray(arr[3]);
+    // Array.isArray(arr[4]);
+    // Array.isArray(arr[5]);
+    // Array.isArray(arr[6]);
+    // Array.isArray(arr[7]);
+    // Array.isArray(arr[8]);
+    // Array.isArray(arr[9]);
+    // Array.isArray(arr[10]);
+    // Array.isArray(arr[11]);
+    // Array.isArray(arr[12]);
+    // Array.isArray(arr[13]);
+    // Array.isArray(arr[14]);
+    // Array.isArray(arr[15]);
+    // Array.isArray(arr[16]);
+    x=Array.isArray(fruits)
+    x=Array.isArray(berries)
+    x=Array.isArray(arr)
+    // x=Array.isArray(arr[3])
+    // x=arr.flat()
+    x=Array.from('12345')
+    const a=1;
+    const b=2;
+    const c=3;
+    x=Array.of(a,b,c)
+    console.log(x);
+</script>
