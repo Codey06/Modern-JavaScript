@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+</head>
+<body class="bg-dark">
+  
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card card-body text-center mt-5">
+               
+             <h1 class="heading display-5 pb-3"> Loan Calculator </h1>
+                <!-- Starting form -->
+             <form id="loan-form">
+                <!-- Loan Amount Form -->
+                <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">$</span>
+                    <input type="number" name="amount" id="amount" class="form-control" 
+                    placeholder="Loan Amount">
+                </div>
+                </div> 
+                <!-- End Loan Amount form -->
+
+            <!-- Interest Form -->   
+                <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">%</span>
+                    <input type="number" name="Interest" id="intrest" class="form-control" 
+                    placeholder="Interest">
+                </div>
+                </div>
+                <!-- End Interest Form -->
+                <!-- Year  to repay -->
+                <div class="form-group">
+                    <input type="number"  id="years" class="form-control" 
+                    placeholder="Years to Repay">
+                </div>
+                <!-- End -->
+                <!--  Calculate Button -->
+                <div class="form-group">
+                    <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+                </div>
+                <!-- End -->
+            </form>
+            <!-- LOADER -->
+            <!-- <div id="loading">
+                <img src="/img/loading.gif" alt="">
+            </div> -->
+            <!-- RESULTS -->
+            <div id="result" class="pt-4">
+            <h5>Result</h5>
+            <!-- Monthly Payment Input -->
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">Monthly Payment</span>
+                    <input type="number"  id="monthly-payment"
+                    class="form-control" disabled>
+                </div>
+            </div> 
+            <!-- END  MONTHLY PEYMENT -->
+            <!-- Total Peyment -->
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">Total Peyment</span>
+                    <input type="number"  id="total-peyment"
+                    class="form-control" disabled>
+                </div>
+            </div> 
+            <!-- END TOTAL PAYMENT -->
+            <!-- Total Interest -->
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">Total Interest</span>
+                    <input type="number"  id="total-interest"
+                    class="form-control" disabled>
+                </div>
+            </div> 
+            <!-- END TOTAL INTEREST -->
+            </div>
+            <!-- END RESULT -->
+            
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- JQuery First, then Popper.js, Then Bootstrap JS -->
+    <script src="/js/slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
