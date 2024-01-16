@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/skeleton.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>056 What is Asynchronous Programming</title>
+  </head>
+  <body>
+    <center><h1> <u>056 What is Asynchronous Programming</u></h1></center>
+    <p>
+      <h3>Asynchronous programming is a programming paradigm that is used to perform
+      a task asynchronously.</h3>
+    </p>
+    <br />
+    <h1>Synchronous Code</h1>
+    <h3>posts = LoadPostsSync();</h3>
+    <h4><em>//... wait til posts are fetched</em></h4>
+    <h4><em>//... do something with posts</em></h4>
+    <h3>doTheNextThing();</h3>
+    <h4><em>// Has to wait until posts load</em></h4>
+    <br /><br />
+    <h3>
+      LoadPostsSync(function (){
+      <h4><em>//... wait til posts are fetched</em></h4>
+      <h4><em>//... do something with posts</em></h4>
+      <h3>})</h3>
+    </h3>
+    <h3>doTheNextThing();</h3>
+    <h4><em>// Doesn't have to wait until posts load</em></h4>
+    <center>
+      <h1><u>Browser / Server APIs</u></h1>
+    </center>
+
+    <h3>Most Async code you work with will be part of an API or library</h3>
+    <h4><li>XMLHttpRequest & Fetch</li></h4>
+    <h4><li>jQuery, Ajax, Axios, Other HTTP libraries</li></h4>
+    <h4><li>Node.js fs(filesystem) module</li></h4>
+    <hr>
+    <center>
+      <h1><u>Handling Async Code</u></h1>
+    </center>
+
+    <h3>There are a few  ways to work with Async Code</h3>
+    <h4><li>Callbacks</li></h4>
+    <h4><li>Promises</li></h4>
+    <h4><li>Async /Await</li></h4>
+
+  </body>
+
+</html>
