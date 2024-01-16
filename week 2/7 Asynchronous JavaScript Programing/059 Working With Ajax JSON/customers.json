@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "company": "123 Designs",
+    "phone": "445-225-5552"
+  },
+  {
+    "id": 2,
+    "name": "Mustaf jirow",
+    "company": "Jirow Designs",
+    "phone": "445-2255041"
+  },
+  {
+    "id": 3,
+    "name": "Falis Jirow",
+    "company": "Ceymis Creams",
+    "phone": "4444154-845"
+  }
+]
