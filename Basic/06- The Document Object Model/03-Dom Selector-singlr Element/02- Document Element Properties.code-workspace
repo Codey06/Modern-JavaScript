@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../02- Document Element Properties"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "06- The Document Object Model"
+  }
+}
